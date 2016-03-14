@@ -1,6 +1,5 @@
 +++
 date = "2016-03-10T11:10:55Z"
-draft = true
 title = "About this blog"
 slug = "about"
 +++
