@@ -1,0 +1,26 @@
+baseurl = "http://jernejg.github.io/"
+languageCode = "en-us"
+title = "I Love To Delete Code"
+canonifyurls = true
+paginate = 5
+PaginatePath = "post"
+publishdir= "public"
+contentdir= "content"
+theme = "hyde"
+[permalinks]
+  post = "post/:year/:month/:day/:slug/"
+[[menu.main]]
+    name = "Blog"
+    identifier = "blog"
+    url = "/post/"
+    weight = -1
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    url = "/about/"
+    weight = 1
+
+
+
+
+

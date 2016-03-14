@@ -1,0 +1,36 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <img src="/logo.png" alt="Hugo Themes">
+      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+      <p class="lead">
+      {{ with .Site.Params.description }} {{.}} {{ else }}Deleting code is violating the law of entropy and setting the universe right.{{end}}
+      </p>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="/">Home</a> </li>
+      {{ range .Site.Menus.main }}
+        <li><a href="{{.URL}}"> {{ .Name }} </a></li>
+      {{end}}
+    </ul>
+    <div id="social" class="text-center">
+      <a href="" target="new">
+        <i class="fa fa-twitter fa-2x"></i>
+      </a>
+      <a href="" target="new">
+        <i class="fa fa-linkedin fa-2x"></i>
+      </a>
+      <a href="" target="new">
+        <i class="fa fa-github fa-2x"></i>
+      </a>
+      <a href="" target="new">
+        <i class="fa fa-envelope-o fa-2x"></i>
+      </a>
+</div>
+    <p><!-- {{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{.Now.Format "2006"}}. All rights reserved. {{end}} --></p>
+  </div>
+</div>
+
+
+
+
