@@ -1,4 +1,4 @@
-baseurl = "http://jernejg.github.io/"
+baseurl = "http://www.ilovetodeletecode.com"
 languageCode = "en-us"
 title = "I Love To Delete Code"
 canonifyurls = true
@@ -17,7 +17,7 @@ theme = "hyde"
 [[menu.main]]
     name = "About"
     identifier = "about"
-    url = "/about/"
+    url = "/about/" 
     weight = 1
 
 
