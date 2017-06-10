@@ -1,4 +1,4 @@
-baseurl = "http://www.ilovetodeletecode.com"
+baseurl = "http://www.ilovetodeletecode.com/"
 languageCode = "en-us"
 title = "I Love To Delete Code"
 canonifyurls = true
@@ -7,6 +7,7 @@ PaginatePath = "post"
 publishdir= "public"
 contentdir= "content"
 theme = "hyde"
+authorName= "Jernej Goricki"
 [permalinks]
   post = "post/:year/:month/:day/:slug/"
 [[menu.main]]
@@ -19,6 +20,7 @@ theme = "hyde"
     identifier = "about"
     url = "/about/" 
     weight = 1
+
 
 
 

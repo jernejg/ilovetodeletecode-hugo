@@ -2,8 +2,8 @@
 date = "2013-10-31T12:53:22Z"
 title = "Prevent large file commits with PowerShell and Mercurial hooks"
 slug = "prevent-large-file-commits-with-powerShell-and-mercurial-hooks"
-tags = [ "Development", "Go", "profiling" ]
-topics = [ "Development", "Go" ]
+tags = [ "Development","Profiling" ]
+topics = [ "Development"]
 +++
 
 Because of Mercurial's immutable historical record of project files there is no way to make a committed file completely disappear from the history tree. Our only hope in this case it's not Obi-Wan but the hg rollback command if we act quickly. Since this command only works for one most recent operation [(How to keep a Mercurial repository small?)](http://stackoverflow.com/questions/3288865/how-to-keep-a-mercurial-repository-small/) it will not work if we already committed one or more changes after the change that we would like to completely remove [(Accidentally committed a large amount of raw data in Mercurial, how do I keep it from overloading my Bitbucket repository?)](http://stackoverflow.com/questions/8466669/accidentally-committed-a-large-amount-of-raw-data-in-mercurial-how-do-i-keep-it). Our problems escalate even faster if we already pushed or pulled changes to a remote repository and our bad commit propagated to other collaborators.
